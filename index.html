@@ -61,7 +61,7 @@
             $('form').submit(function () {
                 const day    = $('input[name="day"]').val();
                 const content = $('input[name="content"]').val();
-                const msg = `${name}\n${udetate}`;
+                const msg = `${day}\n${content}`;
                 sendText(msg);
                 return false;
             });
