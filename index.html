@@ -63,9 +63,6 @@
         const key = params.get('key');
 
         $(function () {
-            const yesNo = window.confirm("日記の内容を送信しますか");
-            if (yesNo) {
-                alert("送信されました");
                 $('form').submit(function () {
                     const day = $('input[name="day"]').val();
                     const content = $('input[name="content"]').val();
@@ -73,10 +70,6 @@
                     sendText(msg);
                     return false;
                 });
-            }
-            else {
-            alert("キャンセルされました");
-            }
         });
 
     </script>
